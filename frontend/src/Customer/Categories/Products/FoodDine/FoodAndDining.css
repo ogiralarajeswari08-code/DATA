@@ -1,0 +1,141 @@
+/* Header Styling for Food & Dining section */
+#restaurants .section-title {
+background: none;
+text-align: center;
+margin-top: 0;
+padding: 25px 0;
+margin-bottom: 40px;
+position: relative;
+}
+
+/* Voice Search Container */
+.voice-search-container {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.voice-search-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 15px;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 123, 255, 0.3);
+}
+
+.voice-search-btn:hover {
+    background: linear-gradient(135deg, #0056b3, #004085);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4);
+}
+
+.voice-search-btn.listening {
+    background: linear-gradient(135deg, #dc3545, #c82333);
+    animation: pulse 1.5s infinite;
+}
+
+.voice-search-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.voice-search-btn i {
+    font-size: 16px;
+}
+
+.voice-query-display {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 5px 10px;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e9ecef;
+}
+
+.voice-query-display small {
+    color: #495057;
+    font-weight: 500;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Bold glossy red gradient text with stronger shadow */
+#restaurants .section-title h2 {
+font-size: 44px;
+font-weight: 900;
+letter-spacing: 3px;
+text-transform: uppercase;
+font-family: 'Georgia', serif;
+background: linear-gradient(180deg, #a00000 0%, #b22222 40%, #ff4444 100%);
+-webkit-background-clip: text; 
+-webkit-text-fill-color: #b22222; /* keeps the text visibly thick */
+color: #b22222; /* fallback for other browsers */
+text-shadow:
+0 0 10px rgba(255, 255, 255, 0.8),   /* soft outer glow */
+2px 2px 8px rgba(0, 0, 0, 0.6),      /* dark shadow for depth */
+-2px -2px 4px rgba(255, 80, 80, 0.4); /* subtle highlight */
+}
+
+.product-info {
+    padding: 15px;
+    text-align: left !important;
+}
+
+.product-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: left !important;
+}
+
+.product-vendor {
+    color: var(--gray);
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: flex !important;
+    align-items: center;
+    justify-content: flex-start !important;
+}
+
+.product-vendor i {
+    margin-right: 5px !important;
+    color: var(--primary);
+}
+
+.product-price {
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--primary);
+    margin-bottom: 15px;
+    text-align: left !important;
+}
+
+.product-actions {
+    display: flex;
+    justify-content: flex-start !important;
+    gap: 10px;
+}
+
+.like-btn {
+    background: transparent;
+    border: none;
+    color: var(--gray);
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
